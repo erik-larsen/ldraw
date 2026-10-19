@@ -2,7 +2,7 @@
 
 A copy of the [LDraw parts library](https://library.ldraw.org), published at [erik-larsen.github.io/ldraw/](https://erik-larsen.github.io/ldraw/) so web pages can fetch parts from it one file at a time. [KineBrick](https://erik-larsen.github.io/kinebrick/) fetches the parts of a model you open yourself from here.
 
-It holds the official library as `complete.zip` has it: `parts/` (with `parts/s/`, subparts), `p/` (primitives, with `p/48/` and `p/8/`), and `LDConfig.ldr` (the colours). Every file is named in small letters, as KineBrick asks for them. A part is at `https://erik-larsen.github.io/ldraw/parts/3001.dat`, a primitive at `https://erik-larsen.github.io/ldraw/p/stud.dat`.
+It holds the official library as `complete.zip` has it: `parts/` (with `parts/s/`, subparts), `p/` (primitives, with `p/48/` and `p/8/`), and `LDConfig.ldr` (the colours). A part is at `https://erik-larsen.github.io/ldraw/parts/3001.dat`, a primitive at `https://erik-larsen.github.io/ldraw/p/stud.dat`.
 
 ## Updating
 
@@ -13,4 +13,4 @@ LDraw.org releases library updates a few times a year. To bring this copy up to 
 
 ## License
 
-The LDraw parts library is by the LDraw.org community, licensed under [CC BY 4.0](https://creativecommons.org/licenses/by/4.0/) (older files under CCAL 2.0): see `CAreadme.txt` and `CAlicense4.txt`. This is an unchanged copy, apart from file names put in small letters.
+The LDraw parts library is by the LDraw.org community, licensed under [CC BY 4.0](https://creativecommons.org/licenses/by/4.0/) (older files under CCAL 2.0): see `CAreadme.txt` and `CAlicense4.txt`. This is an unchanged copy. Every file is named in small letters, as the official release already is; `update.sh` makes sure of it, because models name files in any case, KineBrick asks for every file in small letters, and the web server only finds a file whose name matches exactly.
